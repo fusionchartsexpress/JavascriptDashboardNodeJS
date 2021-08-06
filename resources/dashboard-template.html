@@ -1,0 +1,184 @@
+<html>
+<head>
+    <title>Exporting FusionCharts in Node.js</title>
+    <style>
+          body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+        background-color: #00406a;
+        font-family: Tahoma, Helvetica, Arial, sans-serif;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .chartCont {
+        padding: 0px 12px;
+      }
+
+      .border-bottom {
+        border-bottom: 1px dashed rgba(0, 117, 194, 0.2);
+      }
+
+      .border-right {
+        border-right: 1px dashed rgba(0, 117, 194, 0.2);
+      }
+
+      #container {
+        width: 1200px;
+        margin: 0 auto;
+        position: relative;
+      }
+
+      #container > div {
+        width: 100%;
+        background-color: #ffffff;
+      }
+
+      #logoContainer {
+        float: left;
+      }
+
+      #logoContainer img {
+        padding: 0 10px;
+      }
+
+      #logoContainer div {
+        position: absolute;
+        top: 8px;
+        left: 95px;
+      }
+
+      #logoContainer div h2 {
+        color: #0075c2;
+      }
+
+      #logoContainer div h4 {
+        color: #0e948c;
+      }
+
+      #logoContainer div p {
+        color: #719146;
+        font-size: 12px;
+        padding: 5px 0;
+      }
+
+      #userDetail {
+        float: right;
+      }
+
+      #userDetail img {
+        position: absolute;
+        top: 16px;
+        right: 130px;
+      }
+
+      #userDetail div {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #0075c2;
+      }
+
+      #userDetail div p {
+        margin: 0;
+      }
+
+      #userDetail div p:nth-child(2) {
+        color: #0e948c;
+      }
+
+      #header div:nth-child(3) {
+        clear: both;
+        border-bottom: 1px solid #0075c2;
+      }
+
+      #content div {
+        display: inline-block;
+      }
+
+      #content > div {
+        margin: 0px 20px;
+      }
+
+      #content > div:nth-child(1) > div {
+        margin: 20px 0 0;
+      }
+
+      #content > div:nth-child(2) > div {
+        margin: 0 0 20px;
+      }
+
+      #footer p {
+        margin: 0;
+        font-size: 9pt;
+        color: black;
+        padding: 5px 0;
+        text-align: center;
+      }
+    </style>
+</head>
+
+<body>
+<div id="container">
+    <div id="header">
+        <div id="logoContainer">
+            <img
+                    src="https://archive.ics.uci.edu/ml/assets/logo.gif"
+                    alt="Logo"
+            />
+            <div>
+                <h2></h2>
+
+                <h4></h4>
+            </div>
+        </div>
+        <div id="userDetail">
+        </div>
+        <div></div>
+    </div>
+    <div class="border-bottom" id="content">
+        <div class="border-bottom">
+            <div class="chartCont border-right" id="chart-container">
+                FusionCharts will load here.
+            </div>
+            <div class="chartCont" id="area-chart-container">
+                FusionCharts will load here.
+            </div>
+        </div>
+        <div>
+            <div class="chartCont border-right" id="pie-chart-container">
+                FusionCharts will load here.
+            </div>
+            <div class="chartCont" id="line-chart-container">
+                FusionCharts will load here.
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p>
+            This application was built using
+            <a
+                    href="http://www.fusioncharts.com"
+                    target="_blank"
+                    title="FusionCharts - Data to delight... in minutes"
+            ><b>FusionCharts Suite XT</b></a
+            >
+        </p>
+    </div>
+</div>
+</body>
+</html>
